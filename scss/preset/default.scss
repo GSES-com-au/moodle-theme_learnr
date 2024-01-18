@@ -303,3 +303,8 @@ div.activity-header+div[role="main"] {
   margin-left: 1rem;
   margin-right: 1rem;
 }
+
+//Increase bolding of top bar text
+.navbar.navbar-dark .nav-link {
+  font-weight: 500;
+}
