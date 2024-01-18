@@ -297,3 +297,9 @@ a.courseindex-link.text-truncate {
 .block .block-cards .progress-text {
   display: none;
 }
+
+//Bring buttons and text in line with the description on activity pages
+div.activity-header+div[role="main"] {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
