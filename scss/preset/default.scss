@@ -162,3 +162,138 @@ body {
 }
 
 @include bg-variant(".bg-gray", $gray-200, true);
+
+//GSES Custom SCSS Edits - for GSES sites only
+
+//Course Extension Plugin SCSS
+#page-local-courseextension-index .form-row .form-group label .course {
+  color: red;
+}
+#page-local-courseextension-index .proceedbutton {
+  max-width: 30%;
+}
+#page-local-courseextension-index .cancelbutton {
+  max-width: 20%;
+}
+#page-local-courseextension-index .cancelbutton #cancel {
+  background-color: rgb(255, 0, 0);
+  border-color: rgb(255, 0, 0);
+}
+
+//Hide Crisp Chat javascript block
+.block_crisp_chat {
+  display: none;
+}
+
+//Hide gap on front page (site home)
+.pagelayout-frontpage .secondary-navigation {
+    display: none;
+}
+.pagelayout-frontpage #region-main {
+    display: none;
+}
+
+//SCSS changes to My courses cards
+.block .block-cards .multiline {
+  color: $black;
+  font-weight: bold;
+  font-size: large;
+}
+.card {
+  border-radius: 2rem;
+}
+.pagelayout-frontpage div[data-region="mainpage"] h1.h2 {
+  display: none;
+}
+.pagelayout-frontpage div[data-region="mainpage"] li.nav-item {
+  display: none;
+}
+.dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
+  @media (min-width: 1000px) {
+    width: calc(25% - 0.5rem);
+  }
+}
+.card-deck.dashboard-card-deck.fixed-width-cards .dashboard-card {
+  @media (min-width: 1000px) {
+    width: calc(25% - 0.5rem);
+  }
+}
+.dashboard-card-deck:not(.fixed-width-cards) .dashboard-card {
+  border: 1px solid #000030a8;
+  background-color: #000a32;
+}
+.card-deck.dashboard-card-deck.fixed-width-cards .dashboard-card {
+  border: 1px solid #000030a8;
+  background-color: #000a32;
+}
+div.w-100.text-truncate a.coursename.aalink {
+  color: white;
+  font-weight: bold;
+}
+div.w-100.text-truncate a.coursename.aalink span.multiline {
+  color: white;
+}
+
+div.w-100.text-truncate div.text-muted.muted.d-flex.flex-wrap {
+  color: white !important;
+}
+div.w-100.text-truncate
+  div.text-muted.muted.d-flex.flex-wrap
+  span.categoryname.text-truncate {
+  color: white !important;
+}
+div.card.dashboard-card[data-region="course-content"]
+  div.card-footer.dashboard-card-footer {
+  background-color: #000a32 !important;
+  border-radius: 2rem;
+  margin-top: 5px;
+}
+div.ml-auto.dropdown button.btn.btn-link.btn-icon.icon-size-3.coursemenubtn {
+  color: white;
+}
+.dashboard-card-deck.one-row {
+  overflow-x: hidden;
+}
+.dashboard-card-deck .dashboard-card .dashboard-card-img {
+  height: 18rem;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+}
+body.pagelayout-mycourses
+  div.card.dashboard-card
+  div.card-body.pr-1.course-info-container
+  div.w-100.text-truncate {
+  margin-bottom: -1rem;
+}
+
+//GSES Custom SCSS edits - for all sites
+
+//Hide ? popup
+.btn-footer-popover {
+  display: none !important;
+}
+
+//Hide Home button
+li[data-key="home"] {
+  display: none;
+}
+
+//Make activity restriction icons red
+i.icon.fa.fa-lock.fa-fw {
+  color: red;
+}
+
+//Add background gradient for activities
+li.activity.activity-wrapper.hasinfo[data-for="cmitem"]:not(.label) div.activity-item {
+  background-image: linear-gradient(45deg, #ededed, transparent);
+}
+
+//Display longer names on the LHS drawer
+a.courseindex-link.text-truncate {
+  white-space: normal;
+}
+
+//Hide progress percentage on course cards
+.block .block-cards .progress-text {
+  display: none;
+}

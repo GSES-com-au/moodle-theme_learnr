@@ -113,6 +113,7 @@ function theme_learnr_get_main_scss_content($theme) {
         // Safety fallback - maybe new installs etc.
         $scss .= file_get_contents($CFG->dirroot . '/theme/learnr/scss/preset/default.scss');
     }
+    //$scss .= file_get_contents($CFG->dirroot . '/theme/learnr/scss/learnr.scss');
 
     // Begin DBN Update.
     if ($theme->settings->sectionstyle == 1) {
